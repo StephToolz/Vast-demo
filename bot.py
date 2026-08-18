@@ -11,7 +11,7 @@ from datetime import datetime
 # --- 1. HOSTING SETUP (Render.com) ---
 app = Flask('')
 @app.route('/')
-def home(): return "CS2 High-Realism Bot is Online!"
+def home(): return "Bot is up and running ! ... made with :Love.png: by Zebratic."
 
 def run_web():
     port = int(os.environ.get("PORT", 8080))
