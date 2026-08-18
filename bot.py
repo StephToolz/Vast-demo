@@ -59,7 +59,7 @@ def get_header(jmeno):
     return f"{cas} dop. **{jmeno}**"
 
 # 5. AUTOMATICKÁ SMYČKA (Opravená logika)
-@tasks.loop(hours=1)
+@tasks.loop(minutes=2)
 async def auto_rep():
     try:
         # Načtení ID kanálu z Environment Variables nebo configu
