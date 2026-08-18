@@ -27,14 +27,14 @@ duvody = [
     "awesome prices, huge vouch for this guy", "thanks for the knife, looks fire!",
     "legit skins, buff price trade", "nice gloves, everything safe", "best place for skins, huge vouch",
     "traded my cases for skins, no issues", "finally got my dream ak, thanks!", "cheap skins and fast trade",
-    "fair prices for stickers, vouch", "legit skin market, +rep", "i went first and he delivered, 100% safe",
+    "fair prices for stickers, vouch", "legit skin market, 5 stars", "i went first and he delivered, 100% safe",
     "no middleman needed, trusted guy", "legit staff, very helpful with the trade", "safe trade, no scamming here",
     "trusted seller, would deal again", "everything good, safe and sound", "trusted member, clean history",
     "verified trader, big vouch", "smooth transaction, highly recommend", "received instantly, vouch!",
     "legitimate", "fast paypal payment, safe deal", "money sent and skins received, easy",
     "vouch, amazing person", "paid via paypal, everything was smooth", "got my nitro gift link right away",
     "payment confirmed, legit trader", "best server for trading ever", "nice community, +rep to this guy",
-    "awesome deals, definitely recommend", "everything good, +rep", "vouch +1, friendly trader",
+    "awesome deals, definitely recommend", "everything good", "vouch +1, friendly trader",
     "smooth as butter, thanks!", "dope server, legit people only", "vouch, very nice guy", "cool trader, fair deals"
 ]
 
