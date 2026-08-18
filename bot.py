@@ -26,7 +26,7 @@ intents.message_content = True
 bot = commands.Bot(command_prefix="!", intents=intents)
 
 # 3. AUTOMATICKÁ SMYČKA
-@tasks.loop(minutes=2) # Zde nastavte, jak často má bot psát (minutes=30, hours=1 atd.)
+@tasks.loop(minutes=5) # Zde nastavte, jak často má bot psát (minutes=30, hours=1 atd.)
 async def auto_rep():
     channel = bot.get_channel(config['channel_id'])
     if channel and channel.guild.members:
