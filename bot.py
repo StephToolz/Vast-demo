@@ -26,17 +26,34 @@ intents.message_content = True
 bot = commands.Bot(command_prefix="!", intents=intents)
 
 # 3. AUTOMATICKÁ SMYČKA
-@tasks.loop(minutes=5) # Zde nastavte, jak často má bot psát (minutes=30, hours=1 atd.)
+@tasks.loop(minutes=5)
 async def auto_rep():
     channel = bot.get_channel(config['channel_id'])
     if channel and channel.guild.members:
-        # Vybere náhodného uživatele (ne bota)
         members = [m for m in channel.guild.members if not m.bot]
         if members:
             user = random.choice(members)
-            akce = random.choice(["buy", "sell"])
-            await channel.send(f"+rep {user.mention} - {akce}")
-
+            
+            # SEZNAM PŘIROZENÝCH DŮVODŮ (inspirováno zdroji 5, 6, 12)
+           duvody = [
+    "fast and legit trade ++",
+    "vouch, skins received instantly",
+    "smooth deal, very safe trader",
+    "sent first and he delivered, big vouch",
+    "legit staff, helped me with the trade",
+    "top tier trader, no scam here",
+    "best prices for skins, definitely recommend",
+    "fast payment, clean trade",
+    "everything went smooth, +rep",
+    "vouch +1, very friendly and fast",
+    "safe trade, no midman needed",
+    "trusted member, easy trade",
+    "clean trade, would deal with him again",
+    "awesome prices, huge vouch for this guy"
+]
+            
+            vybrany_rep = random.choice(duvody)
+            await channel.send(f"+rep {user.mention} - {vybrany_rep}")
 @auto_rep.before_loop
 async def before_auto_rep():
     await bot.wait_until_ready()
