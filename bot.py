@@ -19,20 +19,25 @@ def run_web():
 
 # 2. DEFINICE DŮVODŮ (Tvé původní CS2 důvody)
 duvody = [
-    "fast and legit trade ++",
-    "vouch, skins received instantly",
-    "smooth deal, very safe trader",
-    "sent first and he delivered, big vouch",
-    "legit staff, helped me with the trade",
-    "top tier trader, no scam here",
-    "best prices for skins, definitely recommend",
-    "fast payment, clean trade",
-    "everything went smooth, +rep",
-    "vouch +1, very friendly and fast",
-    "safe trade, no midman needed",
-    "trusted member, easy trade",
-    "clean trade, would deal with him again",
-    "awesome prices, huge vouch for this guy"
+    "fast as light, legit trader", "vouch, skins received instantly", "smooth deal, very safe trader",
+    "sent first and he delivered, big vouch", "legit staff, helped me with the trade",
+    "top tier trader, no scam here", "best prices for skins, definitely recommend",
+    "fast payment, clean trade", "everything went smooth, +rep", "vouch +1, very friendly and fast",
+    "safe trade, no midman needed", "trusted member, easy trade", "clean trade, would trade with him again",
+    "awesome prices, huge vouch for this guy", "thanks for the knife, looks fire!",
+    "legit skins, buff price trade", "nice gloves, everything safe", "best place for skins, huge vouch",
+    "traded my cases for skins, no issues", "finally got my dream ak, thanks!", "cheap skins and fast trade",
+    "fair prices for stickers, vouch", "legit skin market, +rep", "i went first and he delivered, 100% safe",
+    "no middleman needed, trusted guy", "legit staff, very helpful with the trade", "safe trade, no scamming here",
+    "trusted seller, would deal again", "everything good, safe and sound", "trusted member, clean history",
+    "verified trader, big vouch", "smooth transaction, highly recommend", "received instantly, vouch!",
+    "legitimate", "fast paypal payment, safe deal", "money sent and skins received, easy",
+    "vouch, amazing person", "paid via paypal, everything was smooth", "got my nitro gift link right away",
+    "payment confirmed, legit trader", "best server for trading ever", "nice community, +rep to this guy",
+    "awesome deals, definitely recommend", "everything good, +rep", "vouch +1, friendly trader",
+    "smooth as butter, thanks!", "dope server, legit people only", "vouch, very nice guy", "cool trader, fair deals"
+]
+
 ]
 
 # 3. NASTAVENÍ BOTA A INTENTS
@@ -59,7 +64,7 @@ def get_header(jmeno):
     return f"{cas} dop. **{jmeno}**"
 
 # 5. AUTOMATICKÁ SMYČKA (Opravená logika)
-@tasks.loop(minutes=2)
+@tasks.loop(minutes=5)
 async def auto_rep():
     try:
         # Načtení ID kanálu z Environment Variables nebo configu
